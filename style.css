@@ -132,13 +132,22 @@
         font-size: calc(14 / 16 * 1rem);
         font-weight: 700;
         background-color: var(--bg-color);
-        transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+        transition: background-color 0.6s ease-in-out;
     }
 
     .social__list li:hover {
         --bg-color: var(--green);
-        color: var(--grey-700);
         transition-duration: 0.2s;
+    }
+
+
+    .social__list li a {
+        display: block;
+        transition: color 0.6s ease-in-out;
+    }
+
+    .social__list li a:hover {
+        color: var(--grey-700);
     }
 
 }
