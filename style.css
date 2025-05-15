@@ -80,10 +80,16 @@
 @layer profile__card {
     .profile__card {
         width: 100%;
+        max-width: 327px;
         padding: 24px;
         border-radius: 12px;
         background: var(--grey-800);
         text-align: center;
+
+        @media (width >= calc(375 / 16 * 1rem)) {
+            max-width: 384px;
+            padding: 40px;
+        }
     }
 
     .profile__img {
